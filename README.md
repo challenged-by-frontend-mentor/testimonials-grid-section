@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Testimonials Grid Section built with React, CSS Grid & BEM](https://www.frontendmentor.io/solutions/testimonials-grid-section-with-sass-and-grid-layout-t8Tp_t8ZY7)
+- Live Site URL: [Frontend Mentor | Testimonials Grid Section](https://challenged-by-frontend-mentor.github.io/testimonials-grid-section/)
 
 ## My process
 
