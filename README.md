@@ -1,23 +1,25 @@
 # Frontend Mentor - Testimonials grid section solution
 
+![](.reference/preview.jpg)
+
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Frontend Mentor - Testimonials grid section solution](#frontend-mentor---testimonials-grid-section-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+    - [AI Collaboration](#ai-collaboration)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,15 +31,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<details>
+  <summary>Mobile view</summary>
+  <img src='screenshots/mobile-view.png' alt='Testimonials grid section challenge - Mobile view' width='375px'>
+</details>
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<details>
+  <summary>Desktop view</summary>
+  <img src='screenshots/desktop-view.png' alt='Testimonials grid section challenge - Desktop view'>
+</details>
 
 ### Links
 
@@ -53,69 +55,41 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- BEM (Block, Element, Modifier) methodology
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Vite](https://vitejs.dev/) - Frontend Tooling
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, my biggest takeaway wasn't just learning how to use CSS Grid properties, but rather how to manage grid layouts and styling through reusable classes. 
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+By applying the BEM methodology, I learned how to separate the structural layout from the visual design. Instead of hardcoding grid areas or colors directly, I created modifier classes (e.g., `.testimonial-card--hero`, `.testimonial-card--purple`). This approach made my React components much cleaner and the CSS highly reusable and easy to maintain.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In future projects, I want to keep practicing my CSS Grid and Flexbox skills to get even faster and more confident at building responsive layouts. I also plan to continue improving how I organize my CSS files and React components to keep everything simple and scalable.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN Web Docs: `<blockquote>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/blockquote) - This helped me understand the semantic usage of the blockquote tag. I also learned a great trick to use CSS pseudo-elements (`::before` and `::after`) to insert quotation marks directly via CSS, rather than hardcoding them into the `<p>` tags.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Compart: Unicode U+00A0](https://www.compart.com/en/unicode/U+00A0) - A very handy resource that helped me find the exact Unicode character for a non-breaking space to use in my CSS `content` property.
+
+- [MDN Web Docs: background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-position) - This documentation clarified the different syntaxes and ways to accurately position background images.
+
+- [Clamp Calculator](https://clampcalculator.com/) - An excellent tool that saved me a lot of time calculating the exact `clamp()` values for responsive fluid padding.
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+For this project, I exclusively collaborated with **Gemini** and **Google Search AI Mode**. I used them primarily as a code reviewer and a sparring partner to check my CSS architecture, debug layout issues (like handling grid overflows), and ensure my HTML semantics met standard accessibility guidelines.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub: [Kairung Vangmanaw](https://github.com/VangmanawKairung)
+- Frontend Mentor - [@VangmanawKairung](https://www.frontendmentor.io/profile/VangmanawKairung)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+A big thanks to Frontend Mentor for providing this great challenge. 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+For my workflow on this specific project, I didn't use Figma or ChatGPT. Instead, I relied heavily on the built-in **macOS Preview** app to measure exact pixel values directly from the provided design images. Even though I used a design overlay in the browser for final checks, being able to quickly measure and know the exact pixel dimensions beforehand made my development process significantly faster, saving me from a lot of trial and error.
