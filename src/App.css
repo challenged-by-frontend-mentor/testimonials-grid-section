@@ -10,6 +10,7 @@
   --clr-neutral-grey-500: hsl(217, 19%, 35%);
   --clr-neutral-dark-blue: hsl(219, 29%, 14%);
   --clr-neutral-black: hsl(0, 0%, 7%);
+  --clr-card-shadow: hsla(224, 10%, 45%, 0.465);
 
   /* Typography */
   --ff-body: "Barlow Semi Condensed", sans-serif;
@@ -68,6 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  box-shadow: 30px 30px 40px var(--clr-card-shadow);
 }
 
 .testimonial-card--hero {
